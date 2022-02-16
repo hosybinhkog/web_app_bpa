@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Học fullstack devenloper</title>
+    <meta name="description" content="Website cung cấp các khóa học và các bài viết liên quan đến lập trình">
+    <meta name="author" content="Bình Thế Anh Phong">
+    <meta name="keywords" content="Javascript , HTML , Coding Course , Css , Typescript">
+</head>
+<body>
+    <header>
+        Here is header
+    </header>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        Here is footer
+    </footer>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
