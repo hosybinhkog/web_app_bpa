@@ -7,20 +7,61 @@
     <meta name="description" content="Website cung cấp các khóa học và các bài viết liên quan đến lập trình">
     <meta name="author" content="Bình Thế Anh Phong">
     <meta name="keywords" content="Javascript , HTML , Coding Course , Css , Typescript">
+    <link href="@Url.Content("~/Content/styles.css")" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        Here is header
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="/home">
+                    <img src="@Url.Content("~/Assets/images/logo.jpg")" class="logo" alt="Logo App" />
+                </a>
+            </div>
+            <nav class="header__menu">
+                <div class="header__menu__mobile">
+                    <i class=""></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Content">Content</a>
+                    </li>
+                    <li>
+                        <a href="/home">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Content">Content</a>
+                    </li>   
+                </ul>
+            </nav>
+            <div class="header__right">
+                <button class="btn btn-login btn--primary">Đăng nhập</button>
+                <button class="btn btn-signup btn--sub">Đăng kí</button>
+            </div>
+        </div>
     </header>
-    <div class="container body-content">
+    <div class="wrapper">
         @RenderBody()
     </div>
 
-    <footer>
-        Here is footer
+    <footer class="footer">
+        <div class="footer-top">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2022 Web lập trình BAP - Nền tảng học lập trình web fullstack tại Việt Nam</p>
+            <div class="social">
+                <img src="#" alt="Facebook fanpage" />
+                <img src="#" alt="Youtube" />
+            </div>
+        </div>
     </footer>
-
-
+    <script src="@Url.Content("~/Assets/Scripts/main.js")" type="text/javascript"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>
